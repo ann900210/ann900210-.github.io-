@@ -9,8 +9,51 @@
       font-family:'Comic Sans MS';
       font-size:33px;
       color:black;
-      background-color:none;
       }
+      ul { /* 取消ul預設的內縮及樣式 */{ /* 取消ul預設的內縮及樣式 */
+        margin: 0;: 0;
+        padding: 0;: 0;
+        list-style: none;
+    }}
+
+    ul.drop-down-menu  {
+        border: #ccc 1px solid;
+        display: inline-block;
+        font-family: 'Comic Sans MS';
+        font-size: 13px;
+    }
+
+    ul.drop-down-menu li {
+        position: relative;
+        white-space: nowrap;
+        border-right: #ccc 1px solid;
+    }
+
+    ul.drop-down-menu > li:last-child {
+        border-right: none;
+    }
+
+    ul.drop-down-menu > li {
+        float: right; 
+    }
+
+     ul.drop-down-menu a {
+        background-color: #fff;
+        color: #333;
+        display: block;
+        padding: 0 30px;
+        text-decoration: none;
+        line-height: 40px;
+
+    }
+    ul.drop-down-menu a:hover { 
+        background-color: #648bed;
+        color: #fff;
+    }
+    ul.drop-down-menu li:hover > a { 
+        background-color: #648bed;
+        color: #fff;
+    }
       </style>
       <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/util.js"></script>
       <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/pagejs.js"></script>
@@ -18,10 +61,9 @@
   <body style="background-image:url('https://scontent.ftpe3-2.fna.fbcdn.net/v/t1.15752-9/92017860_1325957700923149_8987892199924432896_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=3ifZPNHJbXAAX_G9OSJ&_nc_ht=scontent.ftpe3-2.fna&oh=81b7b42e19ecc5d376b64efc8c15c844&oe=5EAF5C58');background-repeat: no-repeat;background-size: cover;">
 </body>
   <body>
-  <h1 style="text-align: center;"><u>Aboout me</u></h1>
+  <h1 style="text-align: center;"><u>About me</u></h1>
      </body>
-  <u1 class="top">
-    <table border="0" width="100%" height="96" bgcolor="white">
+  <u1 class="drop-down-menu">
         <tbody>
           <tr>
            <td align="center"><a href="index.html">home</a></td>
@@ -29,6 +71,5 @@
            <td align="center"><a href="photo.html">photo</a></td>
           </tr>
         </tbody>  
-      </table>
   </u1>
 </html>
