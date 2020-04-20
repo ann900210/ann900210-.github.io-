@@ -98,5 +98,46 @@
       <img src="https://raw.githubusercontent.com/ann900210/ann900210.github.io-/master/28061.jpg" alt;width:"370"height:"300">
         </e>
     </div>
+   <a href="https://ann900210.github.io/ann900210.github.io-/photo.html" id="gotop" style="display: block;">
+   <i class="fa fa-angle-up">
+     ::before
+     </i>
+   </a>
+    <script type="text/javascript">
+        $(function() {
+    /* 按下GoTop按鈕時的事件 */
+        $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+        return false;
+    });
+    
+    /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+         $(window).scroll(function() {
+          if ( $(this).scrollTop() > 400){
+              $('#gotop').fadeIn();
+          } else {
+              $('#gotop').fadeOut();
+          }
+      });
+  });
+  </script>
+    
+        $(function() {
+    /* 按下GoTop按鈕時的事件 */
+        $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+        return false;
+    });
+    
+    /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+         $(window).scroll(function() {
+          if ( $(this).scrollTop() > 400){
+              $('#gotop').fadeIn();
+          } else {
+              $('#gotop').fadeOut();
+          }
+      });
+  });
+  </script>
    </body>
 </html>
